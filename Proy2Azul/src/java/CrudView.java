@@ -1,4 +1,4 @@
-//HOLA
+//Prueba 
 import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
@@ -11,7 +11,7 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import org.primefaces.PrimeFaces;
-
+//cambios 
 @ManagedBean(name = "crudView")
 @ViewScoped
 public class CrudView implements Serializable {
