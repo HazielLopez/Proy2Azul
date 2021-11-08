@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Bienvenido a la tienda virtual</h1>
+        <h3>Por favor digite su correo y contraseña.</h3>
+        <h:form>
+            <p:growl id="growl" showDetail="false" />
+            
+            <p:panelGrid columns="2">
+                
+                Usuario: <p:inputText value="#{loginController.usuario}" />
+                Contraseña: <p:password value="#{loginController.contrasenna}" />               
+                <p:commandButton value="Ingresar como Admin" actionListener="#{loginController.ingresarAdmin()}" update="growl" />
+                <p:commandButton value="Ingresar" actionListener="#{loginController.ingresar()}" update="growl"/>
+                <h:outputLabel/>
+                <p:button value="Olvidé mi contraseña" styleClass="ui-button-flat" />
+                
+           
+              
+            </p:panelGrid>
+        </h:form>
+    </h:body>
+</html>
